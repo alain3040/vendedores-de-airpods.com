@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compraventa de AirPods</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .product-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        .product {
+            background-color: white;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 250px;
+            text-align: center;
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .product h3 {
+            color: #333;
+        }
+        .product p {
+            color: #777;
+        }
+        .product .price {
+            font-size: 18px;
+            color: #f39c12;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .contact-form input, .contact-form textarea {
+            margin: 5px;
+            padding: 10px;
+            width: 80%;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            background-color: #f39c12;
+            border: none;
+            padding: 10px 20px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .contact-form button:hover {
+            background-color: #e67e22;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Compraventa de AirPods</h1>
+    <p>Compra y vende tus AirPods con facilidad</p>
+</header>
+
+<nav>
+    <a href="#">Inicio</a>
+    <a href="#">Productos</a>
+    <a href="#">Vender</a>
+    <a href="#">Contacto</a>
+</nav>
+
+<div class="product-container">
+    <!-- Producto 1 -->
+    <div class="product">
+        <img src="https://www.apple.com/v/airpods-2/x/images/overview/hero__d6uzj9yls8uq_large_2x.jpg" alt="AirPods Pro">
+        <h3>AirPods Pro</h3>
+        <p>Con cancelación activa de ruido y sonido de alta calidad.</p>
+        <p class="price">$249.99</p>
+        <button>Comprar</button>
+    </div>
+
+    <!-- Producto 2 -->
+    <div class="product">
+        <img src="https://www.apple.com/v/airpods-2/x/images/overview/hero__d6uzj9yls8uq_large_2x.jpg" alt="AirPods 2">
+        <h3>AirPods 2ª Generación</h3>
+        <p>AirPods estándar con calidad de sonido increíble.</p>
+        <p class="price">$159.99</p>
+        <button>Comprar</button>
+    </div>
+
+    <!-- Producto 3 -->
+    <div class="product">
+        <img src="https://www.apple.com/v/airpods-2/x/images/overview/hero__d6uzj9yls8uq_large_2x.jpg" alt="AirPods Max">
+        <h3>AirPods Max</h3>
+        <p>Los audífonos de lujo para un sonido perfecto.</p>
+        <p class="price">$549.99</p>
+        <button>Comprar</button>
+    </div>
+</div>
+
+<div class="contact-form">
+    <h2>Contáctanos</h2>
+    <p>¿Tienes alguna pregunta? Escríbenos y te ayudaremos.</p>
+    <form action="#">
+        <input type="text" name="name" placeholder="Tu nombre" required>
+        <input type="email" name="email" placeholder="Tu correo electrónico" required>
+        <textarea name="message" placeholder="Tu mensaje" rows="4" required></textarea>
+        <button type="submit">Enviar mensaje</button>
+    </form>
+</div>
+
+<footer class="footer">
+    <p>&copy; 2025 Compraventa de AirPods. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
